@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/AgtLucas/potential-adventure/issues"
   },
-  "homepage": "https://github.com/AgtLucas/potential-adventure"
+  "homepage": "https://github.com/AgtLucas/potential-adventure",
+  "dependencies": {
+    "lodash": "^3.6.0",
+    "react": "^0.13.1",
+    "react-router": "^0.13.2"
+  }
 }

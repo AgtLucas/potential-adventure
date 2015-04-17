@@ -1,1 +1,12 @@
-var webpack = require('webpack');
+module.exports = {
+  entry: __dirname + '/src/js/app.jsx',
+  output: {
+    path: __dirname + '/build/js',
+    filename: 'app.js'
+  },
+  module: {
+    loaders: [
+      { test: /\.jsx$/, loader: 'jsx-loader' }
+    ]
+  }
+}

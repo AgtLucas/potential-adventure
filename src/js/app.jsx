@@ -1,4 +1,5 @@
 // ES6!!!
+import React from 'react';
 import Counter from './Counter';
 
-new Counter();
+React.render(<Counter />, document.body);

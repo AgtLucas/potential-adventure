@@ -1,10 +1,4 @@
 // ES6!!!
-import React from 'react';
+import Counter from './Counter';
 
-class HelloMessage extends React.Component {
-  render() {
-    return <div>Hello {this.props.name}</div>;
-  }
-}
-
-React.render(<HelloMessage name="Lucas" />, mountNode);
+new Counter();

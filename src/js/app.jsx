@@ -1,5 +1,10 @@
-var React = require('react');
+// ES6!!!
+import React from 'react';
 
-var App = React.createClass({
+class HelloMessage extends React.Component {
+  render() {
+    return <div>Hello {this.props.name}</div>;
+  }
+}
 
-});
+React.render(<HelloMessage name="Lucas" />, mountNode);

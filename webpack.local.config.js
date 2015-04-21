@@ -1,16 +1,13 @@
+var webpack = require('webpack');
+
 module.exports = {
-  entry: __dirname + '/src/js/app.jsx',
-  output: {
-    path: __dirname + '/build/js',
-    filename: 'app.js'
-  },
-  module: {
-    loaders: [
-      { test: /\.jsx$/, loader: 'jsx-loader' },
-      { test: /\.jsx?$/, exclude: /node_modules/, loader: 'babel-loader'}
-    ]
-  },
-  resolve: {
-    extensions: ['', '.js', '.jsx', '.json']
-  }
+  // Evaluate modules with source maps
+  devtool: 'eval',
+
+  // Entry point
+  entry: [
+    'webpack-dev-server/client?http://localhost:9090',
+    'webpack/hot/only-dev-server',
+    './src/js'
+  ],
 }

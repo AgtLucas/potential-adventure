@@ -10,4 +10,11 @@ module.exports = {
     'webpack/hot/only-dev-server',
     './src/js'
   ],
+
+  // Output!
+  output: {
+    path: __dirname + '/build',
+    filename: 'app.js',
+    publicPath: 'http://localhost:9090/build'
+  },
 }

@@ -18,17 +18,20 @@ module.exports = {
     publicPath: 'http://localhost:9090/build'
   },
 
+  // Plugins
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin()
   ],
 
+  // Webpack loaders
   module: {
     loaders: [
       { test: /\.jsx?$/, exclude: /node_modules/, loaders: ['react-hot', 'babel-loader'] }
     ]
   },
 
+  // Resolve extensions to require files without them
   resolve: {
     extensions: ['', '.js', '.jsx']
   }

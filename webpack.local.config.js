@@ -8,7 +8,7 @@ module.exports = {
   entry: [
     'webpack-dev-server/client?http://localhost:9090',
     'webpack/hot/only-dev-server',
-    './src/js'
+    './src/js/app.jsx'
   ],
 
   // Output!
@@ -30,6 +30,6 @@ module.exports = {
   },
 
   resolve: {
-    extensions: ['', '.js', 'jsx']
+    extensions: ['', '.js', '.jsx']
   }
 }

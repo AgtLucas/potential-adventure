@@ -4,7 +4,7 @@
   "description": "Webpack + Babel",
   "main": "index.js",
   "scripts": {
-    "local": "webpack -p --config webpack.local.config.js"
+    "local": "webpack -p --config webpack.local.config.js",
     "build": "webpack -p --config webpack.production.config.js"
   },
   "repository": {

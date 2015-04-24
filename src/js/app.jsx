@@ -18,7 +18,7 @@ let App = React.createClass({
 
 let routes = (
   <Route name="app" path="/" handler={App}>
-    <Route name="login" path="/login" handler={LoginHandler}/>
+    <Route name="login" path="/login" handler={Login}/>
   </Route>
 );
 
